@@ -1,0 +1,14 @@
+import java.util.Scanner;
+class Main{
+	public static void main (String[] args)	{
+	
+        Scanner a=new Scanner(System.in);
+        float x, sal;
+        System.out.println("Enter the salary");
+        x=a.nextFloat();
+        sal=85*x;
+        sal/=100;
+        System.out.println("Salary is: " + sal);
+
+	}
+}
