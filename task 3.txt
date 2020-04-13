@@ -1,0 +1,69 @@
+package com.company;
+import java.util.Scanner;
+import java.lang.Math;
+
+class Point {
+    double x;
+    double y;
+    public Point( double x, double y){
+        this.x=x;
+        this.y=y;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+package com.company;
+import java.lang.Math;
+import java.util.Scanner;
+
+import static com.company.Point.*;
+
+class Point {
+    double x;
+    double y;
+    public Point( double x, double y){
+        this.x=x;
+        this.y=y;
+    }
+
+    public void setX(double x) {
+        this.x = x;
+    }
+
+    public void setY(double y) {
+        this.y = y;
+    }
+
+    public Double getX() {
+        return x;
+    }
+
+    public Double getY() {
+        return y;
+    }
+    static void findDistance(){
+        double x1=x.x;
+        double y1=y.y;
+        double dis=Math.sqrt((pow(point.getX()-x1,2))+(pow(point.getY()-y1,2)));
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Scanner a=new Scanner(System.in);
+        System.out.println("Enter x and y of point");
+        x=a.nextDouble();
+        y=a.nextDouble();
+
+        System.out.println("Enter x and y of point");
+        x1=a.nextDouble();
+        y1=a.nextDouble();
+        Point point;
+        System.out.println("Distance is a"+point.findDistance());
+    }
+
+}
+
+
+
