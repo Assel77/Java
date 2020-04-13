@@ -1,0 +1,48 @@
+package com.company;
+
+class Date{
+    int month;
+    int day;
+    int year;
+
+    public Date(int day, int month, int year) {
+        this.month=m;
+        this.day=d;
+        this.year=y;
+    }
+
+    public void setDay(int d) {
+        if (d <= 31) {
+            this.day = d;
+        }
+    }
+    public void setMonth(int m){
+        if(m<=12) {
+            this.month = m;
+        }
+    }
+
+    public void setYear(int y){
+        if(y<=2020) {
+            this.year = y;
+        }
+    }
+    public int getMonth(){
+        return m;
+    }
+    public int getDay(){
+        return d;
+    }
+    public int getYear(){
+        return y;
+    }
+}
+class DateTest{
+    public static void main(String[] args){
+        Date date=new Date("6","9","2001");
+        System.out.println(date.getDay());
+        System.out.println(date.getMonth());
+        System.out.println(date.getYear());
+    }
+
+}
