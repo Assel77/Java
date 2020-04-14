@@ -1,0 +1,42 @@
+package com.company;
+class Employee{
+    float salary=40000;
+}
+class Student extends Employee{
+    int scholarship=10000;
+}
+
+
+class Main{
+    public static void main(String[] args){
+        Student s= new Student();
+        System.out.println("Student salary is:"+s.salary);
+        System.out.println("Student salary with scholarship is:"+s.scholarship);
+    }
+}
+
+
+
+
+package com.company;
+class Employee{
+    float salary=40000;
+    }
+    class Student extends Employee{
+        int scholarship=10000;
+    }
+    class ExcellentStudent extends Student{
+        int highscholarship=20000;
+    }
+    class BadStudent extends Student{
+        int lowscholarship=20000;
+    }
+    class Main{
+        public static void main(String[] args){
+            Student s= new Student();
+            ExcellentStudent exs=new ExcellentStudent();
+            System.out.println("Student salary is:"+s.salary);
+            System.out.println("Student scholarship is:"+s.scholarship);
+            System.out.println("Student highscholarship is:"+exs.highscholarship);
+        }
+}
