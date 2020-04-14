@@ -1,0 +1,23 @@
+package com.company;
+abstract class Employee{
+    public abstract void overall_income();
+    }
+
+    class Student extends Employee{
+        public void overall_income(){
+            System.out.println("Students overall income (scholarship) is 26000");
+        }
+    }
+    class Teacher extends Employee{
+        public void overall_income() {
+            System.out.println("The teachers overall income (salary) more than 100000");
+        }
+    }
+    class Main{
+        public static void main(String[] args){
+            Student s=new Student();
+            Teacher t=new Teacher();
+            s.overall_income();
+            t.overall_income();
+        }
+}
