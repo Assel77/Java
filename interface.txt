@@ -1,0 +1,42 @@
+1)
+package com.company;
+interface Employee{
+    public void getOverallIncome();
+    public void getJobStartDate();
+}
+
+class Teacher implements Employee{
+    public void getOverallIncome() {
+        System.out.println("The teachers overall income (salary) more than 100000");
+    }
+    public void getJobStartDate(){
+        System.out.println("Started to work at September 1 2019");
+    }
+}
+class Main{
+    public static void main(String[] args){
+        Teacher t=new Teacher();
+        t.getOverallIncome();
+        t.getJobStartDate();
+    }
+}
+
+2)
+package com.company;
+interface ExcellentStudent{
+    int excellentScholarship=30000;
+}
+interface BadStudent{
+    int badScholarship=20000;
+}
+
+class GoodStudent implements ExcellentStudent, BadStudent{
+    int scholarship=(excellentScholarship+badScholarship)/2;
+
+}
+public class Main{
+    public static void main(String[] args) {
+        GoodStudent s = new GoodStudent();
+        System.out.println(s.scholarship);
+    }
+}
