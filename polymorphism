@@ -1,0 +1,55 @@
+1)package com.company;
+
+class Shape{
+     public void Perimeter(){
+         System.out.println("Perimeter is the sum of distance of all side.");
+    }
+    public void Area(){
+        System.out.println("Area is the quantity that expresses the extent of a two-dimensional figure or shape.");
+    }
+}
+class Triangle extends Shape{
+    public void Perimeter(){
+        System.out.println("Formula: a+b+c");
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Shape s=new Shape();
+        Triangle t=new Triangle();
+        s.Area();
+        s.Perimeter();
+        t.Perimeter();
+        t.Area();
+    }
+}
+2)
+package com.company;
+
+class Shape{
+     static int Perimeter(int a, int b, int c){
+         return a+b+c;
+    }
+    static int Area(int b, int h){
+        return (b*h)/2;
+    }
+}
+class Triangle extends Shape{
+    static int Area(int b, int h){
+        return (b*h)/2;
+    }
+}
+public class Main {
+
+    public static void main(String[] args) {
+	// write your code here
+        Shape s=new Shape();
+        Triangle t=new Triangle();
+        System.out.println(s.Area(15,5));
+        System.out.println(s.Perimeter(9,15,4));
+        System.out.println(t.Area(8,3));
+        System.out.println(t.Perimeter(7,8,5));
+    }
+}
